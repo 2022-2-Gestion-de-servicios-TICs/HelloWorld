@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h6>ññññññééééééééééééááááááááóóóó</h6>
+        <h1>Persona creada!!! :D</h1>
+        <h2 th:text="${nombre}" style="font-weight: bold;color: #ff0044">nombre</h2>
+        <h3>apellido: rojas</h3>
+        <h3>apellido: <span th:text="${apel}">rojas</span></h3>
+        <h3 th:text="|apellido: ${apel}|">apellido: ro</h3>
+        <h3 th:text="'apellido: ' + ${apel}">apellido: ro</h3>
+        <h4>Nombre persona: <span th:text="${persona.nombre}"></span></h4>
+        <h4>Apellido persona: <span th:text="${persona.getApellido()}"></span></h4>
+        <h4 th:text="|Dni persona: ${persona.dni}|">dni</h4>
+        <p>Edad: <span th:text="${edad}"></span></p>
+    </body>
+</html>
